@@ -260,7 +260,7 @@
         </div>
 
         <div class="row">
-            @foreach ($artikel->random(3) as $item)
+            @foreach ($artikel->shuffle()->take(3) as $item)
                 <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 fade-in">
                     <div class="post-entry">
                         <a href="{{ route('event.detail', $item->id) }}" class="post-thumbnail">

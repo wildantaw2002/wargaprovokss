@@ -16,8 +16,9 @@ return new class extends Migration
             // Dapatkan semua enum yang sudah ada dan tambahkan 'Marketing'
             $types = ['Agrikultur', 'Akuntansi', 'Edukasi', 'Kesehatan', 'Lingkungan', 'Kreatif', 'Finance', 'Teknologi', 'Sosial', 'Lainnya', 'Marketing'];
 
-            // Re-define the column with the new set of enums
-            DB::statement("ALTER TABLE table_pekerjaan MODIFY COLUMN kategori ENUM('" . join("', '", $types) . "') DEFAULT 'Lainnya'");
+            if (config('database.default') !== 'sqlite') {
+                DB::statement("ALTER TABLE table_pekerjaan MODIFY COLUMN kategori ENUM('" . join("', '", $types) . "') DEFAULT 'Lainnya'");
+            }
         });
     }
 
@@ -30,8 +31,9 @@ return new class extends Migration
             // Dapatkan semua enum tanpa 'Marketing'
             $types = ['Agrikultur', 'Akuntansi', 'Edukasi', 'Kesehatan', 'Lingkungan', 'Kreatif', 'Finance', 'Teknologi', 'Sosial', 'Lainnya'];
 
-            // Re-define the column to the original set of enums
-            DB::statement("ALTER TABLE table_pekerjaan MODIFY COLUMN kategori ENUM('" . join("', '", $types) . "') DEFAULT 'Lainnya'");
+            if (config('database.default') !== 'sqlite') {
+                DB::statement("ALTER TABLE table_pekerjaan MODIFY COLUMN kategori ENUM('" . join("', '", $types) . "') DEFAULT 'Lainnya'");
+            }
         });
     }
 };
