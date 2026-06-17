@@ -1,4 +1,19 @@
-# Wargaprovokss - PosUMKM
+<p align="center">
+  <h1 align="center">🏬 Wargaprovokss - PosUMKM</h1>
+</p>
+
+<p align="center">
+  <strong>Sociopreneurship · Pemberdayaan Pendidikan · Pertumbuhan UMKM · Inovasi Bisnis</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+</p>
 
 POSUMKM adalah sebuah bisnis sociopreneurship yang berfokus pada pemberdayaan pendidikan dan pertumbuhan UMKM. Kami menghubungkan mahasiswa, dosen, dan pelaku usaha menengah ke bawah untuk menciptakan solusi inovatif yang menjawab tantangan nyata yang dihadapi oleh UMKM.
 
